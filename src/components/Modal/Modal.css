@@ -1,0 +1,47 @@
+.rtl-ui-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.rtl-ui-modal {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  text-align: start;
+}
+
+.rtl-ui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-block-end: 1px solid #e5e7eb;
+}
+
+.rtl-ui-modal__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.rtl-ui-modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.rtl-ui-modal__body {
+  padding: 1.25rem;
+}
