@@ -1,0 +1,49 @@
+.rtl-ui-toast {
+  position: fixed;
+  inset-block-end: 1.5rem;
+  inset-inline-end: 1.5rem;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: rtl-ui-toast-in 0.25s ease;
+  text-align: start;
+  z-index: 100;
+}
+
+.rtl-ui-toast--success {
+  background: #059669;
+}
+
+.rtl-ui-toast--error {
+  background: #dc2626;
+}
+
+
+@keyframes rtl-ui-toast-in {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+[dir="rtl"] .rtl-ui-toast {
+  animation-name: rtl-ui-toast-in-rtl;
+}
+
+@keyframes rtl-ui-toast-in-rtl {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
