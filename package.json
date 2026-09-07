@@ -1,8 +1,26 @@
 {
-  "name": "rtl-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@fatimh/rtl-ui",
+  "version": "0.1.0",
+  "description": "A small React component library built with RTL/LTR correctness in mind from the ground up.",
   "type": "module",
+  "main": "./dist/rtl-ui.cjs.js",
+  "module": "./dist/rtl-ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rtl-ui.es.js",
+      "require": "./dist/rtl-ui.cjs.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
