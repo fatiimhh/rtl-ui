@@ -18,6 +18,7 @@ export default defineConfig({
       fileName: (format) => `rtl-ui.${format}.js`,
       formats: ["es", "cjs"],
     },
+    emptyOutDir: false,
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
